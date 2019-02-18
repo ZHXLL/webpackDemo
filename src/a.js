@@ -36,8 +36,13 @@ function fn(n){
 
 /*
 
-1. 自我介绍加项目
+1. 自我介绍加项目 来自那里
+   1.处理异步callback  promise 观察者模式 async await
+   2.随机播放思路 
+   3.vue路由传参  pramse   query  地址栏看见和不可见 配置方式不一样;
    
+    
+        
 
 */ 
 

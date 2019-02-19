@@ -1,0 +1,17 @@
+#box{
+    color: red;
+    width: 200px;
+    height: 200px;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    background: yellow;
+}
+.img{
+    width: 500px;
+    height: 500px;
+    background: url(f602ca61dc5d6ea2e67da2308a9d34fb.jpg);
+}
+#box {
+  background: #abcdef;
+}
+

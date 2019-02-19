@@ -191,7 +191,21 @@ new webpack.ProvidePlugin({ //这里是注入每个模块上的
 })
 ```
 
-## 配置忽略项   不打包 
+## 配置忽略项   不打包
+
+## 在css 引入图片
+  yran add 
+
+  图片非常小的情况下希望不走http请求转换成为base64位     
+   {  
+      test:/\.(jpg|png|gif)$/,
+      use:{
+          loader:"file-loader",
+          options:{
+              limit:1000
+          }
+      }
+  },
 
 
 

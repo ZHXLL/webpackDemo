@@ -2,5 +2,11 @@
     color: red;
     width: 200px;
     height: 200px;
-    transform: rotate(45deg)
+    transform: rotate(45deg);
+    background: yellow;
+}
+.img{
+    width: 500px;
+    height: 500px;
+    background: url(./123.jpg);
 }

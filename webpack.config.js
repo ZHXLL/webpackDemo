@@ -48,6 +48,19 @@ module.exports = {
     module:{
         rules:[
             {
+                test:/\.html$/,
+                use:"html-withimg-loader"
+            },
+            {
+                test:/\.(jpg|png|gif)$/,
+                use:{
+                    loader:"file-loader",
+                    options:{
+                        limit:1500 //限制图片大小  如果大于1000   会转换base64
+                    }
+                }
+            },
+            {
                 test:require.resolve("jquery"),
                 use:"expose-loader?$"
             },
@@ -61,7 +74,7 @@ module.exports = {
             //     }
             // },
             {
-                test:/.js$/,
+                test:/\.js$/,
                 use:{
                     loader:"babel-loader",
                     // options:{//写入到.babelrc文件里面的东西都要隐藏了
@@ -76,7 +89,7 @@ module.exports = {
                 exclude:/node_modules/
             },
             {
-                test:/.css$/,
+                test:/\.css$/,
                 use:[{
                     loader:MiniCssExtractPlugin.loader,
                     options:{
@@ -85,7 +98,7 @@ module.exports = {
                 },"css-loader","postcss-loader"]
             },
             {
-                test:/.less$/,
+                test:/\.less$/,
                 use:[MiniCssExtractPlugin.loader,"css-loader","postcss-loader","less-loader"]
             },
         ]
